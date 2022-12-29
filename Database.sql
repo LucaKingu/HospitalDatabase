@@ -34,7 +34,7 @@ CREATE TABLE Patnt
 	age INTEGER NOT NULL,
 	phone INTEGER NOT NULL,
 	registrationDate DATETIME NOT NULL,
-	sex BIT,
+	sex BIT,	--1 male , 0 female
 	occupationId INTEGER NOT NULL CONSTRAINT pt_occid_fk REFERENCES Occupation(occupationId),
 	countryId INTEGER NOT NULL CONSTRAINT cn_cid_fk REFERENCES Country(countryId),
 	cityId INTEGER NOT NULL CONSTRAINT ct_ctid_fk REFERENCES City(cityId)
