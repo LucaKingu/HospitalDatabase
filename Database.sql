@@ -22,7 +22,13 @@ CREATE TABLE Patient
 	idCard NVARCHAR(10) CONSTRAINT pt_idc_un UNIQUE,
 	firstName NVARCHAR(100) NOT NULL,
 	lastName NVARCHAR(100) NOT NULL,
-	
+	[address] NVARCHAR(250) NOT NULL,
+	martialStatus NVARCHAR(20) NOT NULL,
+	age INTEGER NOT NULL,
+	phone INTEGER NOT NULL,
+	registrationDate DATETIME NOT NULL,
+	sex BIT,
+	occupationId INTEGER NOT NULL CONSTRAINT pt_occid_fk REFERENCES Occupation(occupationId)
 );
 GO
 
