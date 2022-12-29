@@ -8,3 +8,10 @@ Department(FK to Employee)
 Medication(FK To MedicationOrder)
 MedicationOrder
 HealthStatus
+
+_____________________________________________________________
+
+Tables are filled with data to be tested when connected to C#
+_____________________________________________________________
+
+Database connected with C#
