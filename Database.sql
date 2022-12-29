@@ -68,12 +68,23 @@ GO
 
 CREATE TABLE Medication
 (
-	medicationdId INTEGER CONSTRAINT md_mdid_pk PRIMARY KEY,
+	medicationId INTEGER CONSTRAINT md_mdid_pk PRIMARY KEY,
 	medicationName NVARCHAR(100) NOT NULL,
 	symptoms TEXT NOT NULL,
 	diseaseTreatment TEXT NOT NULL,			--The diseases the product treats
 	expiryDate INTEGER NOT NULL,
 	medicationQTY INTEGER,
+);
+GO
+
+CREATE TABLE MedicationOrder
+(
+	medicationOrderId INTEGER CONSTRAINT mdod_mdodid_pk PRIMARY KEY,
+	orderQTY INTEGER NOT NULL,
+	boughtDate DATETIME NOT NULL,	--The date the medicine was bought
+	dueDate DATETIME NOT NULL,		--The date the medicine is estimated to arrive
+	orderCost INTEGER NOT NULL,
+	medicationId INTEGER NOT NULL CONSTRAINT md_mdid_fk REFERENCES Medication(medicationId)
 );
 GO
 
