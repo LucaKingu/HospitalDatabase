@@ -1,0 +1,10 @@
+For The database(SQL) the following tables were created
+
+Country(FK to patient/Employee)
+Occupation(FK to Patient)
+Patient(FK to HealthStatus)
+Hospital_Employee
+Department(FK to Employee)
+Medication(FK To MedicationOrder)
+MedicationOrder
+HealthStatus
