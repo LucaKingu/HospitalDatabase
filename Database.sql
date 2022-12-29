@@ -72,7 +72,7 @@ CREATE TABLE Medication
 	medicationName NVARCHAR(100) NOT NULL,
 	symptoms TEXT NOT NULL,
 	diseaseTreatment TEXT NOT NULL,			--The diseases the product treats
-	expiryDate INTEGER NOT NULL,
+	expiryDate DATETIME NOT NULL,
 	medicationQTY INTEGER,
 );
 GO
