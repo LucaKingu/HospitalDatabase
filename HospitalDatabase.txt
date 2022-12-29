@@ -1,2 +1,0 @@
-C Mini Voting System
-Csharp Note taking application
