@@ -28,7 +28,10 @@ CREATE TABLE Patient
 	phone INTEGER NOT NULL,
 	registrationDate DATETIME NOT NULL,
 	sex BIT,
-	occupationId INTEGER NOT NULL CONSTRAINT pt_occid_fk REFERENCES Occupation(occupationId)
+	occupationId INTEGER NOT NULL CONSTRAINT pt_occid_fk REFERENCES Occupation(occupationId),
+	countryId INTEGER NOT NULL CONSTRAINT cn_cid_fk REFERENCES Country(countryId)
 );
 GO
+
+
 
