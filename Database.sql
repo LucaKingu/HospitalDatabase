@@ -66,4 +66,14 @@ CREATE TABLE Hospital_Employee
 );
 GO
 
+CREATE TABLE Medication
+(
+	medicationdId INTEGER CONSTRAINT md_mdid_pk PRIMARY KEY,
+	medicationName NVARCHAR(100) NOT NULL,
+	symptoms TEXT NOT NULL,
+	diseaseTreatment TEXT NOT NULL,			--The diseases the product treats
+	expiryDate INTEGER NOT NULL,
+	medicationQTY INTEGER,
+);
+GO
 
