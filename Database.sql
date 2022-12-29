@@ -23,7 +23,7 @@ CREATE TABLE Occupation
 );
 GO
 
-CREATE TABLE Patient
+CREATE TABLE Patnt
 (
 	pId INTEGER CONSTRAINT pt_pid_pk PRIMARY KEY,
 	idCard NVARCHAR(10) CONSTRAINT pt_idc_un UNIQUE,
@@ -88,3 +88,15 @@ CREATE TABLE MedicationOrder
 );
 GO
 
+CREATE TABLE healthStatus
+(
+	pId INTEGER NOT NULL CONSTRAINT htst_ptid_fk REFERENCES patnt(pId),
+	currentHealth NVARCHAR(100) NOT NULL,
+	disability NVARCHAR(100),
+	mentalHealth NVARCHAR(100),
+	medication NVARCHAR(100),
+	medicalHistory NVARCHAR(100),
+	geneticInformation NVARCHAR(100),
+	--Can always add more health related information
+);
+GO
