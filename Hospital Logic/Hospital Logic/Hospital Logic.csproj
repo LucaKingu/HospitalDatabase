@@ -76,6 +76,12 @@
     <Compile Include="AddHospitalEmployee.Designer.cs">
       <DependentUpon>AddHospitalEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddMedication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMedication.Designer.cs">
+      <DependentUpon>AddMedication.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddOccupation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddHospitalEmployee.resx">
       <DependentUpon>AddHospitalEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMedication.resx">
+      <DependentUpon>AddMedication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddOccupation.resx">
       <DependentUpon>AddOccupation.cs</DependentUpon>

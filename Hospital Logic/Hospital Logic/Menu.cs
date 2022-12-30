@@ -69,7 +69,9 @@ namespace Hospital_Logic
 
         private void MedicationBtn_Click(object sender, EventArgs e)
         {
-
+            AddMedication addMedication = new AddMedication();
+            addMedication.Show();
+            Visible= false;
         }
 
         private void MedicationOrderBtn_Click(object sender, EventArgs e)

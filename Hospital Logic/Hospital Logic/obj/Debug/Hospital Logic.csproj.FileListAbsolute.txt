@@ -16,3 +16,4 @@ D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddCi
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddCountry.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddHospitalEmployee.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddDepartment.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddMedication.resources
