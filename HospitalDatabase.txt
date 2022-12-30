@@ -15,3 +15,6 @@ Tables are filled with data to be tested when connected to C#
 _____________________________________________________________
 
 Database connected with C#
+_____________________________________________________________
+
+First implement logic to be able to add occupations on C#
