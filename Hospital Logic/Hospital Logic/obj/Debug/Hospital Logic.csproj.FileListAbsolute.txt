@@ -1,0 +1,11 @@
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\bin\Debug\Hospital Logic.exe.config
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\bin\Debug\Hospital Logic.exe
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\bin\Debug\Hospital Logic.pdb
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.csproj.AssemblyReference.cache
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.csproj.SuggestedBindingRedirects.cache
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.Form1.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.Properties.Resources.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.csproj.GenerateResource.cache
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.csproj.CoreCompileInputs.cache
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.exe
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.pdb
