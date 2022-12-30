@@ -55,10 +55,22 @@ namespace Hospital_Logic
 
         private void HospitalEmployeeButton_Click(object sender, EventArgs e)
         {
-
+            AddHospitalEmployee addHospitalEmployee = new AddHospitalEmployee();
+            addHospitalEmployee.Show();
+            Visible= false;
         }
 
         private void DepartmentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MedicationBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MedicationOrderBtn_Click(object sender, EventArgs e)
         {
 
         }

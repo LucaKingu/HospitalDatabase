@@ -64,6 +64,12 @@
     <Compile Include="AddHealthStatus.Designer.cs">
       <DependentUpon>AddHealthStatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddHospitalEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHospitalEmployee.Designer.cs">
+      <DependentUpon>AddHospitalEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddOccupation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddHealthStatus.resx">
       <DependentUpon>AddHealthStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHospitalEmployee.resx">
+      <DependentUpon>AddHospitalEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddOccupation.resx">
       <DependentUpon>AddOccupation.cs</DependentUpon>
