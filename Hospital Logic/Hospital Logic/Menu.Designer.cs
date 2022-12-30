@@ -37,6 +37,15 @@
             this.countryBtn = new System.Windows.Forms.Button();
             this.MedicationBtn = new System.Windows.Forms.Button();
             this.MedicationOrderBtn = new System.Windows.Forms.Button();
+            this.DelteOccupationBtn = new System.Windows.Forms.Button();
+            this.DeleteHealthStatusBtn = new System.Windows.Forms.Button();
+            this.DeleteCityBtn = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.DeltePatientBtn = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addOccupationBtn
@@ -138,11 +147,111 @@
             this.MedicationOrderBtn.UseVisualStyleBackColor = true;
             this.MedicationOrderBtn.Click += new System.EventHandler(this.MedicationOrderBtn_Click);
             // 
+            // DelteOccupationBtn
+            // 
+            this.DelteOccupationBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.DelteOccupationBtn.Location = new System.Drawing.Point(299, 7);
+            this.DelteOccupationBtn.Name = "DelteOccupationBtn";
+            this.DelteOccupationBtn.Size = new System.Drawing.Size(128, 68);
+            this.DelteOccupationBtn.TabIndex = 9;
+            this.DelteOccupationBtn.Text = "Delete Occupation";
+            this.DelteOccupationBtn.UseVisualStyleBackColor = true;
+            // 
+            // DeleteHealthStatusBtn
+            // 
+            this.DeleteHealthStatusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.DeleteHealthStatusBtn.Location = new System.Drawing.Point(289, 143);
+            this.DeleteHealthStatusBtn.Name = "DeleteHealthStatusBtn";
+            this.DeleteHealthStatusBtn.Size = new System.Drawing.Size(156, 68);
+            this.DeleteHealthStatusBtn.TabIndex = 10;
+            this.DeleteHealthStatusBtn.Text = "Delete Health Status";
+            this.DeleteHealthStatusBtn.UseVisualStyleBackColor = true;
+            // 
+            // DeleteCityBtn
+            // 
+            this.DeleteCityBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.DeleteCityBtn.Location = new System.Drawing.Point(299, 212);
+            this.DeleteCityBtn.Name = "DeleteCityBtn";
+            this.DeleteCityBtn.Size = new System.Drawing.Size(128, 68);
+            this.DeleteCityBtn.TabIndex = 11;
+            this.DeleteCityBtn.Text = "Delete City";
+            this.DeleteCityBtn.UseVisualStyleBackColor = true;
+            this.DeleteCityBtn.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button5.Location = new System.Drawing.Point(299, 494);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(128, 68);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button6.Location = new System.Drawing.Point(299, 563);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(128, 68);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button7.Location = new System.Drawing.Point(299, 425);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(128, 68);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // DeltePatientBtn
+            // 
+            this.DeltePatientBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.DeltePatientBtn.Location = new System.Drawing.Point(299, 75);
+            this.DeltePatientBtn.Name = "DeltePatientBtn";
+            this.DeltePatientBtn.Size = new System.Drawing.Size(128, 68);
+            this.DeltePatientBtn.TabIndex = 15;
+            this.DeltePatientBtn.Text = "Delete Patient";
+            this.DeltePatientBtn.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button9.Location = new System.Drawing.Point(299, 282);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(128, 68);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button10.Location = new System.Drawing.Point(299, 356);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(128, 68);
+            this.button10.TabIndex = 17;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 637);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.DeltePatientBtn);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.DeleteCityBtn);
+            this.Controls.Add(this.DeleteHealthStatusBtn);
+            this.Controls.Add(this.DelteOccupationBtn);
             this.Controls.Add(this.MedicationOrderBtn);
             this.Controls.Add(this.MedicationBtn);
             this.Controls.Add(this.countryBtn);
@@ -169,6 +278,15 @@
         private System.Windows.Forms.Button countryBtn;
         private System.Windows.Forms.Button MedicationBtn;
         private System.Windows.Forms.Button MedicationOrderBtn;
+        private System.Windows.Forms.Button DelteOccupationBtn;
+        private System.Windows.Forms.Button DeleteHealthStatusBtn;
+        private System.Windows.Forms.Button DeleteCityBtn;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button DeltePatientBtn;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }
 

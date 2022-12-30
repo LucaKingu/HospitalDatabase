@@ -80,5 +80,10 @@ namespace Hospital_Logic
             addMedicationOrder.Show();
             Visible= false;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           // removecity
+        }
     }
 }
