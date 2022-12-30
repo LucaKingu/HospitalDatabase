@@ -48,6 +48,7 @@ namespace Hospital_Logic
             con.Close();
 
             MessageBox.Show("Data successfully saved");
+            Visible= false;
         }
     }
 }

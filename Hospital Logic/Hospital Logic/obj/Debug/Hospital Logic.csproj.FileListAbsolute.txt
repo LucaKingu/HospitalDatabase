@@ -10,3 +10,4 @@ D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.exe
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital Logic.pdb
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddOccupation.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddPatient.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.Menu.resources

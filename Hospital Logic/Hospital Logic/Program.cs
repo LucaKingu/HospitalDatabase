@@ -16,7 +16,7 @@ namespace Hospital_Logic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddOccupation());
+            Application.Run(new Menu());
         }
     }
 }
