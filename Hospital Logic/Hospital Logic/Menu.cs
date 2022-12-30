@@ -24,5 +24,19 @@ namespace Hospital_Logic
             addOccupation.Show();
             Visible= false;
         }
+
+        private void AddPatientButton_Click(object sender, EventArgs e)
+        {
+            AddPatient addPatient = new AddPatient();
+            addPatient.Show();
+            Visible= false;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            AddHealthStatus addHealthStatus = new AddHealthStatus();
+            addHealthStatus.Show();
+            Visible= false;
+        }
     }
 }
