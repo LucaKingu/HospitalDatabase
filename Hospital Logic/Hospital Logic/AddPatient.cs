@@ -39,9 +39,7 @@ namespace Hospital_Logic
             string cityId = cityIdtxt.Text;
 
             string Query = "INSERT INTO Patnt (pId,idCard,firstName,lastName,address,martialstatus,age,phone,registrationDate," +
-                "sex,occupationId,countryId,cityId) VALUES ('" + pid + "' , '" + idCard + "' , '" + firstName + "' , '" + lastName + "'" +
-                "'" + address + "' , '" + martialStatus + "' , '" + age + "' , '" + phone + "' , '" + registrationDate + "' , '" + sex + "' , '" + occupationId + "'" +
-                "'" + countryId + "' , '" + cityId + "')";
+                "sex,occupationId,countryId,cityId) VALUES ('" + pid + "' , '" + idCard + "' , '" + firstName + "' , '" + lastName + "','" + address + "' , '" + martialStatus + "' , '" + age + "' , '" + phone + "' , '" + registrationDate + "' , '" + sex + "' , '" + occupationId + "','" + countryId + "' , '" + cityId + "')";
 
 
             SqlCommand cmd = new SqlCommand(Query, con);
