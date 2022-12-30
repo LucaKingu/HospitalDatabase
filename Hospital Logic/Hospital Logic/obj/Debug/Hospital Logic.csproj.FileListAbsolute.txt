@@ -12,3 +12,4 @@ D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddOc
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddPatient.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.Menu.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddHealthStatus.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddCity.resources

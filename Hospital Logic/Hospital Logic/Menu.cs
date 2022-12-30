@@ -38,5 +38,27 @@ namespace Hospital_Logic
             addHealthStatus.Show();
             Visible= false;
         }
+
+        private void cityBtn_Click(object sender, EventArgs e)
+        {
+            AddCity addCity = new AddCity();
+            addCity.Show();
+            Visible= false;
+        }
+
+        private void countryBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HospitalEmployeeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DepartmentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
