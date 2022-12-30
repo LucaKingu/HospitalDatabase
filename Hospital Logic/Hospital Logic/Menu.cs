@@ -48,7 +48,9 @@ namespace Hospital_Logic
 
         private void countryBtn_Click(object sender, EventArgs e)
         {
-
+            AddCountry addCountryadd = new AddCountry();
+            addCountryadd.Show();
+            Visible= false;
         }
 
         private void HospitalEmployeeButton_Click(object sender, EventArgs e)

@@ -52,6 +52,12 @@
     <Compile Include="AddCity.Designer.cs">
       <DependentUpon>AddCity.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCountry.Designer.cs">
+      <DependentUpon>AddCountry.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddHealthStatus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddCity.resx">
       <DependentUpon>AddCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCountry.resx">
+      <DependentUpon>AddCountry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddHealthStatus.resx">
       <DependentUpon>AddHealthStatus.cs</DependentUpon>
