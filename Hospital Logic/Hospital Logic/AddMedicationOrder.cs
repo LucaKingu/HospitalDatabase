@@ -31,7 +31,7 @@ namespace Hospital_Logic
             string orderCost = OrderCosttxt.Text;
             string medicationId = MedicationIdtxt.Text;
 
-            string Query = "INSERT INTO MedicationOrder (medicationOrderId , orderQTY,boughtDate,dueDate,orderCost,medicationId) VALUES ('" + medicationId + "' , '" + orderQTY + "'" + "'" + boughtDate + "' , '" + dueDate + "' , '" + orderCost + "' , '" + medicationId + "' , '" + "')";
+            string Query = "INSERT INTO MedicationOrder (medicationOrderId , orderQTY,boughtDate,dueDate,orderCost,medicationId) VALUES ('" + medicationId + "' , '" + orderQTY + "','" + boughtDate + "' , '" + dueDate + "' , '" + orderCost + "' , '" + medicationId + "')";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();

@@ -17,4 +17,34 @@ _____________________________________________________________
 Database connected with C#
 _____________________________________________________________
 
-First implement logic to be able to add occupations on C#
+Implement logic on C# to be able to:
+Add Occupation
+Add Patient
+Add Health Status
+Add city
+Add Country
+Add Hospital Employee
+Add Department
+Add Medication
+Add Medication Order
+
+
+Two Major errors,DATETIME and incorrect numb of rows to values inserted.
+-> Fixed
+
+minor error, would not convert Date/Time from string
+->Fixed
+
+Minor error,"Add Medication Order" would not take "2" as "medicationId".
+Error:Violation of PRIMARY KEY constraint 'mdod_mdodid_pk'. Cannot insert duplicate key in object 'dbo.MedicationOrder'. The duplicate key value is (2).
+The statement has been terminated.
+
+
+
+
+
+
+
+Add auto increment for primary keys(ID's)
+Change Sex data type to nvarchar
+Inheritance may of have been used in general as "AddForm"
