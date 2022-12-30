@@ -31,7 +31,7 @@ namespace Hospital_Logic
             string expiryDate = expiryDatetxt.Text;
             string medicationQty = medicationqtyTxt.Text;
 
-            string Query = "INSERT INTO Medication (medicationId , medicationName,symptoms,diseaseTreatment,expiryDate,medicationQTY) VALUES ('" + medicationId + "' , '" + medicationName + "'" + "'" + symptoms + "' , '" + diseaseTreatment + "' , '" + expiryDate + "' , '" + medicationQty + "' , '" +"')";
+            string Query = "INSERT INTO Medication (medicationId , medicationName,symptoms,diseaseTreatment,expiryDate,medicationQTY) VALUES ('" + medicationId + "' , '" + medicationName + "','" + symptoms + "' , '" + diseaseTreatment + "' , '" + expiryDate + "' , '" + medicationQty + "')";
 
 
             SqlCommand cmd = new SqlCommand(Query, con);
