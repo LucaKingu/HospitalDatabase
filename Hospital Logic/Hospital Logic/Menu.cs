@@ -143,5 +143,15 @@ namespace Hospital_Logic
             deleteMedicationOrder.Show();
             Visible = false;
         }
+
+        private void showOccupationsBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ShowPatientsBtn_Click(object sender, EventArgs e)
+        {
+
+        } 
     }
 }
