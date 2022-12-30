@@ -21,3 +21,6 @@ D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddMe
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteOccupation.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteCity.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteCountry.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeletePatient.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteDepartment.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteHealthStatus.resources

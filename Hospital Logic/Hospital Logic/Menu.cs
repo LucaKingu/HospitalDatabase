@@ -97,12 +97,16 @@ namespace Hospital_Logic
 
         private void DeltePatientBtn_Click(object sender, EventArgs e)
         {
-
+            DeletePatient deletePatient = new DeletePatient();
+            deletePatient.Show();
+            Visible = false;    
         }
 
         private void DeleteHealthStatusBtn_Click(object sender, EventArgs e)
         {
-
+            DeleteHealthStatus deleteHealthStatus = new DeleteHealthStatus();
+            deleteHealthStatus.Show();
+            Visible = false;
         }
 
         private void DeleteCountryBtn_Click(object sender, EventArgs e)
@@ -119,7 +123,9 @@ namespace Hospital_Logic
 
         private void DeleteDepartmentBtn_Click(object sender, EventArgs e)
         {
-
+            DeleteDepartment deleteDepartment = new DeleteDepartment();
+            deleteDepartment.Show();
+            Visible = false;
         }
 
         private void DeleteMedicationBtn_Click(object sender, EventArgs e)

@@ -106,11 +106,29 @@
     <Compile Include="DeleteCountry.Designer.cs">
       <DependentUpon>DeleteCountry.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDepartment.Designer.cs">
+      <DependentUpon>DeleteDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteHealthStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteHealthStatus.Designer.cs">
+      <DependentUpon>DeleteHealthStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteOccupation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeleteOccupation.Designer.cs">
       <DependentUpon>DeleteOccupation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePatient.Designer.cs">
+      <DependentUpon>DeletePatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -156,8 +174,17 @@
     <EmbeddedResource Include="DeleteCountry.resx">
       <DependentUpon>DeleteCountry.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDepartment.resx">
+      <DependentUpon>DeleteDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteHealthStatus.resx">
+      <DependentUpon>DeleteHealthStatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteOccupation.resx">
       <DependentUpon>DeleteOccupation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePatient.resx">
+      <DependentUpon>DeletePatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

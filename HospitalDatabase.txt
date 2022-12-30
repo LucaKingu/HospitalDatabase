@@ -44,9 +44,17 @@ The statement has been terminated.
 
 Seeing as the Menu had worked perfectly,the MenuCreate branch has been merged to master.
 
+Implement:
+Delete City
+Delete Country
+Delete Occupation
+Delete Patient -> Gives error "The DELETE statement conflicted with the REFERENCE constraint" as it contains  data in other tables that references the data which is being deleted. However this is confusing as the same query executes on SQL with no problem. -> unfixed
 
 
 
-Add auto increment for primary keys(ID's)
+
+Ways the system Can be better:
+Add auto increment for primary keys(PRIMARY KEY IDENTITY(1,1))
 Change Sex data type to nvarchar
 Inheritance may of have been used in general as "AddForm"
+Able to add Exit instead of shutting the system down
