@@ -8,13 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace Hospital_Logic
 {
-    public partial class Form1 : Form
+    public partial class AddOccupation : Form
     {
-        public Form1()
+        public AddOccupation()
         {
             InitializeComponent();
         }

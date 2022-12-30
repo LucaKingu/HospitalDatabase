@@ -1,6 +1,6 @@
 ﻿namespace Hospital_Logic
 {
-    partial class Form1
+    partial class AddOccupation
     {
         /// <summary>
         /// Required designer variable.
