@@ -39,9 +39,7 @@ namespace Hospital_Logic
             string cityId = CityIdtxt.Text;
             string departmentId = DepartmentIdtxt.Text;
 
-            string Query = "INSERT INTO Hospital_Employee ( employeeId, firstName , lastName,address,martialStatus,age,phone,hireDate,attritionDate,sex,countryId,cityId,departmentId) VALUES ('" + employeeId + "' , '" + firstName + "' , '" + lastName + "' , '"+address+"'" +
-                "'"+martialStatus+"' , '"+age+"' , '"+phone+"' , '"+hireDate+"' , '"+attritionDate+"' , '"+sex+"'" +
-                "'"+countryId+"' , '"+cityId+"' , '"+departmentId+"')";
+            string Query = "INSERT INTO Hospital_Employee ( employeeId,firstName,lastName,address,martialStatus,age,phone,hireDate,attritionDate,sex,countryId,cityId,departmentId) VALUES ('"+employeeId+"' , '"+firstName+ "' , '"+lastName+"' , '"+address+"' , '"+martialStatus+"' , '"+age+"' , '"+phone+"' , '"+hireDate+"' , '"+attritionDate+"' , '"+sex+"' , '"+countryId+"' , '"+cityId+"' , '"+departmentId+"')";
 
 
             SqlCommand cmd = new SqlCommand(Query, con);
