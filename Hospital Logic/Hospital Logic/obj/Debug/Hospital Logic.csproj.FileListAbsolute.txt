@@ -24,3 +24,4 @@ D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.Delet
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeletePatient.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteDepartment.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteHealthStatus.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteHospitalEmployee.resources

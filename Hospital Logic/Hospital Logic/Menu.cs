@@ -118,7 +118,9 @@ namespace Hospital_Logic
 
         private void DeleteHospitalEmployeeBtn_Click(object sender, EventArgs e)
         {
-
+            DeleteHospitalEmployee deleteHospitalEmployee = new DeleteHospitalEmployee();
+            deleteHospitalEmployee.Show();
+            Visible = false;
         }
 
         private void DeleteDepartmentBtn_Click(object sender, EventArgs e)
