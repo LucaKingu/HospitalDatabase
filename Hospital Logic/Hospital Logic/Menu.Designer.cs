@@ -130,9 +130,9 @@
             // MedicationOrderBtn
             // 
             this.MedicationOrderBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.MedicationOrderBtn.Location = new System.Drawing.Point(26, 558);
+            this.MedicationOrderBtn.Location = new System.Drawing.Point(12, 558);
             this.MedicationOrderBtn.Name = "MedicationOrderBtn";
-            this.MedicationOrderBtn.Size = new System.Drawing.Size(128, 58);
+            this.MedicationOrderBtn.Size = new System.Drawing.Size(168, 67);
             this.MedicationOrderBtn.TabIndex = 8;
             this.MedicationOrderBtn.Text = "Add Medication Order";
             this.MedicationOrderBtn.UseVisualStyleBackColor = true;
