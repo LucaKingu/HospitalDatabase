@@ -132,12 +132,16 @@ namespace Hospital_Logic
 
         private void DeleteMedicationBtn_Click(object sender, EventArgs e)
         {
-
+            DeleteMedication deleteMedication = new DeleteMedication();
+            deleteMedication.Show();
+            Visible = false;
         }
 
         private void DeleteMedicationOrderBtn_Click(object sender, EventArgs e)
         {
-
+            DeleteMedicationOrder deleteMedicationOrder = new DeleteMedicationOrder();
+            deleteMedicationOrder.Show();
+            Visible = false;
         }
     }
 }

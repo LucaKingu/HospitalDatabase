@@ -124,6 +124,18 @@
     <Compile Include="DeleteHospitalEmployee.Designer.cs">
       <DependentUpon>DeleteHospitalEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteMedication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMedication.Designer.cs">
+      <DependentUpon>DeleteMedication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMedicationOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMedicationOrder.Designer.cs">
+      <DependentUpon>DeleteMedicationOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteOccupation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +200,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteHospitalEmployee.resx">
       <DependentUpon>DeleteHospitalEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMedication.resx">
+      <DependentUpon>DeleteMedication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMedicationOrder.resx">
+      <DependentUpon>DeleteMedicationOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteOccupation.resx">
       <DependentUpon>DeleteOccupation.cs</DependentUpon>

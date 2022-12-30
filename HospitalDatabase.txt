@@ -49,6 +49,7 @@ Delete City
 Delete Country
 Delete Occupation
 Delete Patient -> Gives error "The DELETE statement conflicted with the REFERENCE constraint" as it contains  data in other tables that references the data which is being deleted. However this is confusing as the same query executes on SQL with no problem. -> unfixed
+Delete Department
 
 
 
