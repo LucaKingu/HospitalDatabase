@@ -83,7 +83,53 @@ namespace Hospital_Logic
 
         private void button4_Click(object sender, EventArgs e)
         {
-           // removecity
+            DeleteCity deleteCity = new DeleteCity();
+            deleteCity.Show();
+            Visible = false;
+        }
+
+        private void DelteOccupationBtn_Click(object sender, EventArgs e)
+        {
+            DeleteOccupation deleteOccupation = new DeleteOccupation();
+            deleteOccupation.Show();
+            Visible = false;
+        }
+
+        private void DeltePatientBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteHealthStatusBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteCountryBtn_Click(object sender, EventArgs e)
+        {
+            DeleteCountry deleteCountry = new DeleteCountry();
+            deleteCountry.Show();
+            Visible = false;
+        }
+
+        private void DeleteHospitalEmployeeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteDepartmentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteMedicationBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteMedicationOrderBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

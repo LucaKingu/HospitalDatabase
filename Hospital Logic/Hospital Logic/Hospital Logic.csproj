@@ -94,6 +94,24 @@
     <Compile Include="AddOccupation.Designer.cs">
       <DependentUpon>AddOccupation.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCity.Designer.cs">
+      <DependentUpon>DeleteCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCountry.Designer.cs">
+      <DependentUpon>DeleteCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOccupation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOccupation.Designer.cs">
+      <DependentUpon>DeleteOccupation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +149,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddOccupation.resx">
       <DependentUpon>AddOccupation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCity.resx">
+      <DependentUpon>DeleteCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCountry.resx">
+      <DependentUpon>DeleteCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOccupation.resx">
+      <DependentUpon>DeleteOccupation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

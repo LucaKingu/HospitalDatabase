@@ -18,3 +18,6 @@ D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddHo
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddDepartment.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddMedication.resources
 D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.AddMedicationOrder.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteOccupation.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteCity.resources
+D:\HospitalDatabase\Hospital Logic\Hospital Logic\obj\Debug\Hospital_Logic.DeleteCountry.resources
