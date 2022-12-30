@@ -275,6 +275,7 @@
             this.ShowPatientsBtn.TabIndex = 19;
             this.ShowPatientsBtn.Text = "Show Patients";
             this.ShowPatientsBtn.UseVisualStyleBackColor = true;
+            this.ShowPatientsBtn.Click += new System.EventHandler(this.ShowPatientsBtn_Click);
             // 
             // showHospitalEmployeeBtn
             // 
@@ -285,6 +286,7 @@
             this.showHospitalEmployeeBtn.TabIndex = 20;
             this.showHospitalEmployeeBtn.Text = "Show Hopsital Employees";
             this.showHospitalEmployeeBtn.UseVisualStyleBackColor = true;
+            this.showHospitalEmployeeBtn.Click += new System.EventHandler(this.showHospitalEmployeeBtn_Click);
             // 
             // ShowCountryBtn
             // 
@@ -295,6 +297,7 @@
             this.ShowCountryBtn.TabIndex = 21;
             this.ShowCountryBtn.Text = "Show Countries";
             this.ShowCountryBtn.UseVisualStyleBackColor = true;
+            this.ShowCountryBtn.Click += new System.EventHandler(this.ShowCountryBtn_Click);
             // 
             // ShowDepartmentBtn
             // 
@@ -305,6 +308,7 @@
             this.ShowDepartmentBtn.TabIndex = 22;
             this.ShowDepartmentBtn.Text = "Show Departments";
             this.ShowDepartmentBtn.UseVisualStyleBackColor = true;
+            this.ShowDepartmentBtn.Click += new System.EventHandler(this.ShowDepartmentBtn_Click);
             // 
             // ShowHealthStatusBtn
             // 
@@ -315,6 +319,7 @@
             this.ShowHealthStatusBtn.TabIndex = 23;
             this.ShowHealthStatusBtn.Text = "Show Health Status";
             this.ShowHealthStatusBtn.UseVisualStyleBackColor = true;
+            this.ShowHealthStatusBtn.Click += new System.EventHandler(this.ShowHealthStatusBtn_Click);
             // 
             // showMedicationsBtn
             // 
@@ -325,6 +330,7 @@
             this.showMedicationsBtn.TabIndex = 24;
             this.showMedicationsBtn.Text = "Show Medications";
             this.showMedicationsBtn.UseVisualStyleBackColor = true;
+            this.showMedicationsBtn.Click += new System.EventHandler(this.showMedicationsBtn_Click);
             // 
             // ShowCityBtn
             // 
@@ -335,6 +341,7 @@
             this.ShowCityBtn.TabIndex = 25;
             this.ShowCityBtn.Text = "Show Cities";
             this.ShowCityBtn.UseVisualStyleBackColor = true;
+            this.ShowCityBtn.Click += new System.EventHandler(this.ShowCityBtn_Click);
             // 
             // showMedicationOrdersBtn
             // 
@@ -345,6 +352,7 @@
             this.showMedicationOrdersBtn.TabIndex = 26;
             this.showMedicationOrdersBtn.Text = "Show Medication Orders";
             this.showMedicationOrdersBtn.UseVisualStyleBackColor = true;
+            this.showMedicationOrdersBtn.Click += new System.EventHandler(this.showMedicationOrdersBtn_Click);
             // 
             // Menu
             // 
@@ -380,7 +388,6 @@
             this.Controls.Add(this.addOccupationBtn);
             this.Name = "Menu";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
 
         }

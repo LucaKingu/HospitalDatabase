@@ -20,8 +20,6 @@ namespace Hospital_Logic
 
         private void occupantExecBtn_Click(object sender, EventArgs e)
         {
-
-
             //Address of SQL server and Database
             string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
 
