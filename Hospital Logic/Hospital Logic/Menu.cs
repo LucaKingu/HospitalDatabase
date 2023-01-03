@@ -203,17 +203,18 @@ namespace Hospital_Logic
         }
 
         private void ShowHealthStatusBtn_Click(object sender, EventArgs e)
-        {
+        {        
             string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
             SqlConnection con = new SqlConnection(conString);
             con.Open();
 
-            string Query = "SELECT ISNULL(pId,'Null'),ISNULL(currentHealth,'Null'),ISNULL(disability,'Null'),ISNULL(mentalHealth,'Null'),ISNULL(medication,'Null'),ISNULL(medicalHistory,'Null'),ISNULL(geneticInformation,'Null')FROM dbo.healthStatus";
+            string Query = "SELECT* FROM dbo.healthStatus";
+
 
             SqlCommand cmd = new SqlCommand(Query, con);
 
-            Console.WriteLine("\nPatient ID   Current Heatlh  Disability   Mental Health   Medication   Medical History   Genetic Information");
-            Console.WriteLine("------------   --------------  ----------   -------------   ----------   ---------------   --------------------");
+            Console.WriteLine("\nPatient ID    Current Health   Disability   Mental Health   Medication   Medical History   Genetic Information");
+            Console.WriteLine("------------    -------------    ---------    -------------   ---------    ---------------   -------------------");
 
 
             SqlDataReader rdr = cmd.ExecuteReader();
@@ -222,11 +223,10 @@ namespace Hospital_Logic
             {
                 while (rdr.Read())
                 {
-                    Console.WriteLine("{0}  {1}  {2}  {3}  {4}  {5}  {6}"
-                        , rdr["pId"],rdr["currentHealth"], rdr["disability"], rdr["mentalHealth"], rdr["medication"], rdr["medicalHistory"], rdr["geneticInformation"]);
+                    Console.WriteLine("{0}   {1}   {2}   {3}   {4}   {5}   {6}"
+                        , rdr["pId"], rdr["currentHealth"], rdr["disability"] , rdr["mentalHealth"] , rdr["medication"], rdr["medicalHistory"], rdr["geneticInformation"]);
                 }
             }
-            //GIving error I cannot solve
             con.Close();
             this.Close();
         }
