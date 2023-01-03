@@ -349,12 +349,60 @@ namespace Hospital_Logic
 
         private void showMedicationsBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT* FROM dbo.Medication";
+
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nMedication ID   Medication Name   Symptoms   Disease Treatments   Expiry Date   Medication Quantity");
+            Console.WriteLine("---------------  ---------------    --------   ------------------   -----------    ------------------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}   {1}   {2}   {3}   {4}   {5}"
+                        , rdr["medicationId"], rdr["medicationName"] , rdr["symptoms"], rdr["diseaseTreatment"] , rdr["expiryDate"] , rdr["medicationQTY"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
 
         private void showMedicationOrdersBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT* FROM dbo.MedicationOrder";
+
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nMedication Order ID   Order Quantity   Bought Date   Due Date   Order Cost   Medication ID");
+            Console.WriteLine("---------------------   -------------     --------      ------    ----------   -------------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}   {1}   {2}   {3}   {4}   {5}"
+                        , rdr["medicationOrderId"], rdr["orderQTY"], rdr["boughtDate"], rdr["dueDate"], rdr["orderCost"], rdr["medicationId"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
     }
 }

@@ -69,8 +69,10 @@ Implemented show City
 
 Ways the system Can be better:
 Add auto increment for primary keys(PRIMARY KEY IDENTITY(1,1))
+Use a better Date format(since it shows time aswell)
 Change Sex data type to nvarchar
 Inheritance may of have been used in general as "AddForm"
 Able to add Exit instead of shutting the system down
+Adding currency to money
 Implement somre sort of simple UI for Showing the data
 Fix all bugs
