@@ -61,7 +61,7 @@ Implementing the logic to show data for the tables.
 Important to note that no UI was implemented for showing data,rather when the user clicks on "Show Occupation" for example,the programm closes and the data is displayed on the console app.
 
 Implemented Show Occupations
-
+Implemented show Patients
 
 Ways the system Can be better:
 Add auto increment for primary keys(PRIMARY KEY IDENTITY(1,1))

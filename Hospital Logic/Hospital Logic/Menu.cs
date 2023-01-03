@@ -153,10 +153,7 @@ namespace Hospital_Logic
             string Query = "SELECT* FROM dbo.Occupation";
 
 
-            //SqlCommand cmd = new SqlCommand(Query, con);
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = Query;
+            SqlCommand cmd = new SqlCommand(Query, con);
 
             Console.WriteLine("\nOccupation ID  Occupation Name");
             Console.WriteLine("---------------  ---------------");
@@ -178,7 +175,31 @@ namespace Hospital_Logic
 
         private void ShowPatientsBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT* FROM dbo.Patnt";
+
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nPatient ID   ID Card   First Name   Last Name   Address    Martial Status   Age   Phone   Registration Date   Sex   Occupation ID   Country ID   City ID");
+            Console.WriteLine("------------   -------   ----------   ---------   -------    --------------   ---   ------  -----------------   ---   -------------   ----------   --------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}  {1}  {2}  {3}  {4}  {5}  {6}  {7}  {8}  {9}  {10}  {11}  {12}"
+                        , rdr["pId"], rdr["idCard"], rdr["firstName"], rdr["lastName"], rdr["address"], rdr["martialStatus"], rdr["age"], rdr["phone"], rdr["registrationDate"], rdr["sex"], rdr["occupationId"], rdr["countryId"], rdr["cityId"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
 
         private void ShowHealthStatusBtn_Click(object sender, EventArgs e)
