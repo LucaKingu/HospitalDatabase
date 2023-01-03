@@ -295,13 +295,13 @@ namespace Hospital_Logic
             SqlConnection con = new SqlConnection(conString);
             con.Open();
 
-            string Query = "SELECT* FROM dbo.Occupation";
+            string Query = "SELECT* FROM dbo.Hospital_Employee";
 
 
             SqlCommand cmd = new SqlCommand(Query, con);
 
-            Console.WriteLine("\nOccupation ID  Occupation Name");
-            Console.WriteLine("---------------  ---------------");
+            Console.WriteLine("\nEmployee ID   First Name   Last Name   Address   Martial Status   Age   Phone   Hire Date   attrition Date   Sex   Country ID   City ID   Department ID");
+            Console.WriteLine("-------------   ----------   ---------   -------   --------------   ---   -----   ----------  --------------    --   ----------   --------  --------------");
 
 
             SqlDataReader rdr = cmd.ExecuteReader();
@@ -310,8 +310,8 @@ namespace Hospital_Logic
             {
                 while (rdr.Read())
                 {
-                    Console.WriteLine("{0}  {1}"
-                        , rdr["occupationId"], rdr["occupationName"]);
+                    Console.WriteLine("{0}   {1}  {2}  {3}    {4}    {5}    {6}    {7}    {8}    {9}    {10}    {11}    {12}"
+                        , rdr["employeeId"], rdr["firstName"], rdr["lastName"], rdr["address"], rdr["martialStatus"], rdr["age"], rdr["phone"], rdr["hireDate"], rdr["attritionDate"], rdr["sex"], rdr["countryId"], rdr["cityId"],rdr["departmentId"]);
                 }
             }
             con.Close();
