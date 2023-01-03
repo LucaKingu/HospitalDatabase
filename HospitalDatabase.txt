@@ -50,8 +50,17 @@ Delete Country
 Delete Occupation
 Delete Patient -> Gives error "The DELETE statement conflicted with the REFERENCE constraint" as it contains  data in other tables that references the data which is being deleted. However this is confusing as the same query executes on SQL with no problem. -> unfixed
 Delete Department
+Delete HealthStatus
+Delete HospitalEmployee
+Delete Medication
+Delete MedicationOrder
 
 
+
+Implementing the logic to show data for the tables.
+Important to note that no UI was implemented for showing data,rather when the user clicks on "Show Occupation" for example,the programm closes and the data is displayed on the console app.
+
+Implemented Show Occupations
 
 
 Ways the system Can be better:
@@ -59,3 +68,4 @@ Add auto increment for primary keys(PRIMARY KEY IDENTITY(1,1))
 Change Sex data type to nvarchar
 Inheritance may of have been used in general as "AddForm"
 Able to add Exit instead of shutting the system down
+Implement somre sort of simple UI for Showing the data

@@ -144,9 +144,36 @@ namespace Hospital_Logic
             Visible = false;
         }
 
-        private void ShowOccupationsBtn_Click(object sender, EventArgs e)
+        private void ShowOccupationsBtn_Click(object sender, EventArgs e)  
         {
-            
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+
+            string Query = "SELECT* FROM dbo.Occupation";
+
+
+            //SqlCommand cmd = new SqlCommand(Query, con);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = Query;
+
+            Console.WriteLine("\nOccupation ID  Occupation Name");
+            Console.WriteLine("---------------  ---------------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if(rdr.HasRows)
+            {
+                while(rdr.Read())
+                {
+                    Console.WriteLine("{0}  {1}"
+                        , rdr["occupationId"], rdr["occupationName"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
 
         private void ShowPatientsBtn_Click(object sender, EventArgs e)

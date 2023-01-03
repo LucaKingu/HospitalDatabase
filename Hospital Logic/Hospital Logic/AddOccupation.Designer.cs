@@ -52,9 +52,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label1.Location = new System.Drawing.Point(56, 122);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 31);
+            this.label1.Size = new System.Drawing.Size(187, 31);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Order ID";
+            this.label1.Text = "Occupation ID";
             // 
             // label2
             // 
@@ -62,14 +62,14 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label2.Location = new System.Drawing.Point(12, 172);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 31);
+            this.label2.Size = new System.Drawing.Size(231, 31);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Order Name";
+            this.label2.Text = "Occupation Name";
             // 
             // OrderIdtxt
             // 
             this.OrderIdtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.OrderIdtxt.Location = new System.Drawing.Point(186, 122);
+            this.OrderIdtxt.Location = new System.Drawing.Point(249, 119);
             this.OrderIdtxt.Name = "OrderIdtxt";
             this.OrderIdtxt.Size = new System.Drawing.Size(223, 38);
             this.OrderIdtxt.TabIndex = 3;
@@ -77,7 +77,7 @@
             // OrderNametxt
             // 
             this.OrderNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.OrderNametxt.Location = new System.Drawing.Point(186, 183);
+            this.OrderNametxt.Location = new System.Drawing.Point(249, 169);
             this.OrderNametxt.Name = "OrderNametxt";
             this.OrderNametxt.Size = new System.Drawing.Size(223, 38);
             this.OrderNametxt.TabIndex = 4;
