@@ -204,12 +204,60 @@ namespace Hospital_Logic
 
         private void ShowHealthStatusBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT ISNULL(pId,'Null'),ISNULL(currentHealth,'Null'),ISNULL(disability,'Null'),ISNULL(mentalHealth,'Null'),ISNULL(medication,'Null'),ISNULL(medicalHistory,'Null'),ISNULL(geneticInformation,'Null')FROM dbo.healthStatus";
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nPatient ID   Current Heatlh  Disability   Mental Health   Medication   Medical History   Genetic Information");
+            Console.WriteLine("------------   --------------  ----------   -------------   ----------   ---------------   --------------------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}  {1}  {2}  {3}  {4}  {5}  {6}"
+                        , rdr["pId"],rdr["currentHealth"], rdr["disability"], rdr["mentalHealth"], rdr["medication"], rdr["medicalHistory"], rdr["geneticInformation"]);
+                }
+            }
+            //GIving error I cannot solve
+            con.Close();
+            this.Close();
         }
 
         private void ShowCityBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT* FROM dbo.City";
+
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nCity ID   City Name");
+            Console.WriteLine("---------   ---------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}  {1}"
+                        , rdr["cityId"], rdr["cityName"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
 
         private void ShowCountryBtn_Click(object sender, EventArgs e)
