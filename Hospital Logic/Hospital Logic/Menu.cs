@@ -262,17 +262,89 @@ namespace Hospital_Logic
 
         private void ShowCountryBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT* FROM dbo.Country";
+
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nCountry ID    Country Name");
+            Console.WriteLine("------------    ------------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}  {1}"
+                        , rdr["countryId"], rdr["countryName"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
 
         private void showHospitalEmployeeBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT* FROM dbo.Occupation";
+
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nOccupation ID  Occupation Name");
+            Console.WriteLine("---------------  ---------------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}  {1}"
+                        , rdr["occupationId"], rdr["occupationName"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
 
         private void ShowDepartmentBtn_Click(object sender, EventArgs e)
         {
+            string conString = "Data Source=DESKTOP-I830V2D;Initial Catalog=HospitalManagementSystem;Integrated Security=True";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
 
+            string Query = "SELECT* FROM dbo.Department";
+
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+
+            Console.WriteLine("\nDepartment ID  Department Name");
+            Console.WriteLine("---------------  ---------------");
+
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    Console.WriteLine("{0}  {1}"
+                        , rdr["departmentId"], rdr["departmentName"]);
+                }
+            }
+            con.Close();
+            this.Close();
         }
 
         private void showMedicationsBtn_Click(object sender, EventArgs e)
